@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon_kendra.jpg" type="image/x-icon">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://harolperiodico.github.io/web-HD-SOFTWARE-SOLUTIONS/">
+    <meta property="og:title" content="HD SOFTWARE SOLUTIONS">
+    <meta property="og:description"
+        content="Hola, esta es mi web; para ayudarte a impulsar tu transformación digital YA. Te desarrollo tú plataforma WEB-MOBILE-RESPONSIVE; para tu emprendimiento, negocio o empresa al siguiente nivel.">
+    <meta property="og:image" content="https://harolperiodico.github.io/web-HD-SOFTWARE-SOLUTIONS/img/logo_HD_75.png">
+    <title>Kendra</title>
+    <style>
+        /* --- Estilos Generales --- */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #004080;
+            /* Azul oscuro corporativo */
+        }
+
+        /* --- Encabezado y Navegación --- */
+        .header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #004080;
+        }
+
+        .nav a {
+            color: #050505;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #0425e0;
+            /* Azul más brillante */
+        }
+
+        /* --- Sección Principal (Hero) --- */
+        .hero {
+            background-image: linear-gradient(rgba(0, 64, 128, 0.7), rgba(0, 64, 128, 0.7)), url('https://images.pexels.com/photos/7567561/pexels-photo-7567561.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 120px 0;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #28a745;
+            /* Verde para acción */
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #218838;
+            /* Verde más oscuro */
+        }
+
+        /* --- Secciones de Contenido --- */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-light {
+            background: #fff;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .service-item {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-item i {
+            font-size: 3em;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .service-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        /* --- Sección de Testimonios --- */
+        .testimonial {
+            background: #f0f8ff;
+            /* Azul muy claro */
+            padding: 30px;
+            border-left: 5px solid #007bff;
+            margin: 40px auto;
+            max-width: 800px;
+            border-radius: 5px;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .testimonial .author {
+            font-weight: bold;
+            text-align: right;
+            color: #555;
+        }
+
+        /* --- Sección de Llamada a la Acción Final --- */
+        .final-cta {
+            background-color: #004080;
+            color: #fff;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            color: #fff;
+        }
+
+        /* --- Pie de Página --- */
+        .footer {
+            background: #020202;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        /* --- Estilos para el Botón Flotante de WhatsApp --- */
+        .whatsapp-flotante {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            /* Color oficial de WhatsApp */
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+            z-index: 1000;
+            /* Asegura que esté por encima de todo */
+            transition: transform 0.3s, box-shadow 0.3s;
+            /* Flexbox para centrar el ícono perfectamente */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .whatsapp-flotante:hover {
+            transform: scale(1.1);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">Kendra</div>
+            <nav class="nav">
+                <a href="#servicios">Servicios</a>
+                <a href="#por-que-elegirme">¿Por qué elegirme?</a>
+                <a href="#testimonios">Testimonios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Declaraciones de Renta sin Estrés</h1>
+            <p>Maximiza tus devoluciones y evita errores. Tu tranquilidad fiscal es mi prioridad.</p>
+            <a href="#contacto" class="cta-button">¡Pide tu Asesoría Gratuita!</a>
+        </div>
+    </section>
+
+    <section id="servicios" class="section section-light">
+        <div class="container">
+            <h2>Mis Servicios</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h3>Declaración de Renta para Personas</h3>
+                    <p>Asesoría completa para empleados, independientes y pensionados. Aseguro la correcta aplicación de
+                        deducciones.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Asesoría para Empresas</h3>
+                    <p>Optimización fiscal y cumplimiento normativo para pequeñas y medianas empresas. Tu aliado
+                        estratégico.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Planificación Fiscal</h3>
+                    <p>Anticipa tus obligaciones y planifica tus finanzas para un futuro más rentable y seguro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="por-que-elegirme" class="section">
+        <div class="container">
+            <h2>La Diferencia Profesional</h2>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Atención Personalizada</h3>
+                    <p>Cada cliente es único. Me dedico a entender tu situación para ofrecerte la mejor solución.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Confidencialidad y Seguridad</h3>
+                    <p>Tus datos son tratados con la máxima discreción y seguridad. Tu confianza es mi mayor activo.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-award"></i>
+                    <h3>Experiencia y Actualización</h3>
+                    <p>Constantemente actualizada en la normativa fiscal para garantizar un servicio de la más alta
+                        calidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="section section-light">
+        <div class="container">
+            <h2>Lo que dicen mis clientes</h2>
+            <div class="testimonial">
+                <p>"¡Excelente servicio! Me ayudó a entender todo el proceso y obtuve una devolución que no esperaba.
+                    ¡Totalmente recomendada!"</p>
+                <p class="author">- Ana Pérez, Cliente Satisfecha</p>
+            </div>
+            <div class="testimonial">
+                <p>"La mejor inversión que he hecho. Me ahorró tiempo, dinero y muchos dolores de cabeza. Profesional y
+                    muy eficiente."</p>
+                <p class="author">- Carlos Gómez, Cliente Satisfecho</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section final-cta">
+        <div class="container">
+            <h2>¿Listo para poner tus finanzas en orden?</h2>
+            <p style="font-size: 1.2em; margin-bottom: 30px;">No dejes tu declaración para el último minuto. Contáctame
+                hoy y trabajemos juntos.</p>
+            <a href="https://wa.me/+573165686108?text=Hola,%20quisiera%20más%20información%20sobre%20la%20declaración%20de%20renta"
+                target="_blank" class="cta-button">
+                <i class="fab fa-whatsapp"></i> Hablar por WhatsApp
+            </a>
+            <p style="margin-top: 20px;">O envíame un correo a: <a href="harol.diaz@softwaresolutions.com"
+                    style="color: #fff;">haroldiazmelendez@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Kendra. Todos los derechos reservados.</p>
+            <p>Powered By HD SOFTWARE SOLUTIONS</p>
+        </div>
+    </footer>
+    <a href="https://wa.me/+573165686108?text=Hola,%20quisiera%20más%20información%20sobre%20la%20declaración%20de%20renta"
+        class="whatsapp-flotante" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+
+</html>
